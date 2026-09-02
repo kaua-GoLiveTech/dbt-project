@@ -1,5 +1,5 @@
 WITH src_movimentacao AS (
-    SELECT * FROM CONFINE.RAW.RAW_MOVIMENTACAO
+    SELECT * FROM {{ source('confine', 'r_movimentacao') }}
 )
 
 SELECT 

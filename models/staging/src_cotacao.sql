@@ -1,5 +1,5 @@
 WITH raw_cotacao AS (
-    SELECT * FROM CONFINE.RAW.RAW_COTACAO
+    SELECT * FROM {{ source('confine', 'r_cotacao') }}
 )
 SELECT 
     TIPOTITULO AS tipo_titulo,

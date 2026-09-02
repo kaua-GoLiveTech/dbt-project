@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: confine
+    schema: raw
+    tables:
+      - name: r_cotacao
+        identifier: raw_cotacao
+      - name: r_movimentacao
+        identifier: raw_movimentacao
